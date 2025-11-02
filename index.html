@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Product Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">My Awesome Store</h1>
+            <div class="profile-section">
+                <img src="profile.PNG" alt="Profile" class="profile-icon" id="profileIcon">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Body -->
+    <main class="main-content">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="cards-grid" id="cardsContainer">
+                <!-- Cards will be dynamically generated here -->
+            </div>
+
+            <!-- API Card Section -->
+            <div class="api-section">
+                <h2 class="section-title">Customer of the Month!</h2>
+                <div class="api-card-container">
+                    <div class="api-card" id="apiCard">
+                        <div class="card-header">
+                            <h3>Featured Customer</h3>
+                            <button class="debug-btn" id="debugBtn" title="Refresh">
+                                � Refresh
+                            </button>
+                        </div>
+                        <div class="api-content" id="apiContent">
+                            <p class="loading">loading...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 My Awesome Store. All rights reserved</p>
+            <p class="footer-hint">Contact us: contact@mystore.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
